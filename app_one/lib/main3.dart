@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
+void main(){
   runApp(
     MaterialApp(
       home: Scaffold(
@@ -8,20 +8,19 @@ void main() {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromARGB(255, 175, 143, 84),
-                Color.fromARGB(255, 72, 88, 92),
+                Color.fromARGB(255, 256, 22, 12),
+                Color.fromARGB(245, 88, 29, 80),
               ],
-              begin: Alignment.bottomRight,
-              end: Alignment.topLeft,
-              ),
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+            ),
           ),
-          child: const Center(
+          child: Center(
             child: Text(
-              'Hello world!',
+              'Hello world',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 29,
-                decoration: TextDecoration.none
               ),
             ),
           ),
