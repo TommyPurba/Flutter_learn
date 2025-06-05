@@ -4,29 +4,38 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 193, 241, 110),
-                Color.fromARGB(255, 150, 43, 79),
-              ],
-              begin: Alignment.bottomRight,
-              end: Alignment.topLeft,
-            ),
-          ),
-          child: const Center(
-            child: Text(
-              'Hello World',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 29,
-                decoration: TextDecoration.none,
-              ),
-              ),
-          ),
-        ),
+        body: GradientContainer(),
       ),
     )
   );
+}
+
+
+
+class GradientContainer extends StatelessWidget{
+  @override
+  Widget build(context){
+    return Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(255, 204, 70, 63),
+              Color.fromARGB(255, 53, 13, 133),
+              ],
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,        
+          ),
+        ),
+        child: const Center(
+          child: Text(
+            'hello world!',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 29,
+              decoration: TextDecoration.none,
+            ),
+            ),
+        ),
+      );
+  }
 }

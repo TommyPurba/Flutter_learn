@@ -4,7 +4,17 @@ void main(){
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Container(
+        body: DecorationGradient() ,
+      ),
+    )
+  );
+}
+
+
+class DecorationGradient extends StatelessWidget {
+  @override
+  Widget build(context){
+    return Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
@@ -24,8 +34,6 @@ void main(){
               ),
             ),
           ),
-        ),
-      ),
-    )
-  );
+        );
+  }
 }
