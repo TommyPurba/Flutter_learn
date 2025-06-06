@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+   const MaterialApp(
       home: Scaffold(
         body: GradientContaier(),
       ),
@@ -12,6 +12,8 @@ void main() {
 
 
 class GradientContaier extends StatelessWidget {
+  const GradientContaier({super.key});
+  //super.key dipakai untuk penghubung parrent dengan child di state untuk melacak identitas widget, membandingkan versi lama dengan baru, serta mempertahankan posis widget dalam tree flutter
   @override
   Widget build(context){
     return Container(
