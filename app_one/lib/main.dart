@@ -1,25 +1,14 @@
 import 'package:flutter/material.dart';
 
+import 'package:app_one/gradient_decoration.dart';
 
 void main(){
   runApp(
-     MaterialApp(
-        home: Scaffold(
-      body: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-              children: [
-                InkWell(
-                  onTap: (){},
-                  child: Text(
-                    "custom button"
-                  ),
-                )
-              ],
-          ),
-        ),
-    ),
-  )
+    MaterialApp(
+      home: Scaffold(
+        body: DecorationGradient( Color.fromARGB(255, 255, 35, 3),  Color.fromARGB(244, 224, 177, 128),),
+      ),
+    )
   );
- 
 }
+
